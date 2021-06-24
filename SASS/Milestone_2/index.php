@@ -15,6 +15,7 @@
 
         <!-- SITE HEADER -->
         <?=  require(__DIR__.'/../dist/PHP_partials/template/header.php'); ?>
+
         <!-- /SITE HEADER -->
 
         <!-- SITE MAIN -->
@@ -44,6 +45,7 @@
     </div>
 
     <?= require(__DIR__.'/../dist/PHP_partials/template/footer.php')?>
+
 
 </body>
 

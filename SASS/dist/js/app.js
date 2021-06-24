@@ -10,14 +10,31 @@
 var app = new Vue({
   el: '#root',
   data: {
-    albums: []
+    albums: [],
+    generi: []
   },
   mounted: function mounted() {
     var _this = this;
 
     axios.get('../dist/PHP_partials/api.php').then(function (resp) {
       // console.log(resp.data);
-      _this.albums = resp.data;
+      _this.albums = resp.data; //Codice per determinare i generi musicali
+      // this.albums.forEach(el => {
+      //     if (!this.generi.includes(el.genre)) {
+      //         this.generi.push(el.genre)
+      //     }
+      // })
+      // Aggiungo ad ogni elemento una chiave "visible" impostata su true 
+      // (mi servirà per mostrare gli album se il genere è quello giusto )
+
+      _this.albums.forEach(function (el) {
+        el.visible = true;
+      });
+
+      axios.get('../dist/PHP_partials/genre.php').then(function (resp) {
+        // console.log(resp.data)
+        _this.generi = resp.data;
+      });
     })["catch"](function (e) {
       console.log(e);
     });

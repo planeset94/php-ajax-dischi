@@ -5,10 +5,6 @@
 
 if($_SERVER["REQUEST_URI"]==="/PHP/esercitazione_4(hp-ajax-dischi)/php-ajax-dischi/SASS/Milestone_2/index.php") : ?>
 
-
-
-
-
 <!-- PRIMA VUE -->
 <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
 <!-- POI LA CDN DI AJAX -->
@@ -19,11 +15,5 @@ if($_SERVER["REQUEST_URI"]==="/PHP/esercitazione_4(hp-ajax-dischi)/php-ajax-disc
 
 <!-- MY SCRIPT  -->
 <script src="../dist/js/app.js"></script>
-
-
-
-
-
-
 
 <?php endif ;?>
