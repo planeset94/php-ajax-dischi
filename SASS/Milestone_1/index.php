@@ -9,10 +9,55 @@
     <title>PHP AJAX DISCHI</title>
 </head>
 
+
 <body>
+    <div id="root">
+
+        <header>
+            <div class="container">
+                <!-- Logo spotify -->
+                <div>
+                    <img src="../dist/img/logo.png" alt="logo spotify">
+
+                </div>
+
+                <!-- Creo il selector dei generi  -->
+                <!-- <select >
+                    <option>Genre</option>
+                    <option ><span>{{gen}}</span>
+                    </option>
+
+                </select> -->
 
 
-    <h1>Ciao ancora</h1>
+            </div>
+        </header>
+
+        <main>
+
+            <div class="container">
+
+
+                <div class="square">
+                    <div class="photo">
+                        <img src="">
+                    </div>
+                    <h5>Titolo</h5>
+                    <p>par</p>
+                    <p>anno</p>
+
+                </div>
+
+            </div>
+
+
+        </main>
+
+    </div>
+
+
+
+
 
 
 </body>
