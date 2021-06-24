@@ -1,6 +1,6 @@
 <?php
 
-require(  __DIR__ .'/db.php');
+require('../dist/PHP_partials/db.php');
 
 
 ?>
