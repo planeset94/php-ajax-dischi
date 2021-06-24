@@ -1,8 +1,8 @@
 <?php
-
-require('../dist/PHP_partials/db.php');
-
-
+// die(__DIR__);
+// /Applications/MAMP/htdocs/PHP
+// /esercitazione_4(hp-ajax-dischi)/php-ajax-dischi/SASS/Milestone_1
+require(__DIR__.'/../dist/PHP_partials/db.php');
 ?>
 
 
@@ -22,58 +22,15 @@ require('../dist/PHP_partials/db.php');
 <body>
     <div id="root">
 
-        <header>
-            <div class="container">
-                <!-- Logo spotify -->
-                <div>
-                    <img src="../dist/img/logo.png" alt="logo spotify">
+        <!-- SITE HEADER -->
+        <?=  require(__DIR__.'/../dist/PHP_partials/template/header.php'); ?>
+        <!-- /SITE HEADER -->
 
-                </div>
-
-                <!-- Creo il selector dei generi  -->
-                <!-- <select >
-                    <option>Genre</option>
-                    <option ><span>{{gen}}</span>
-                    </option>
-
-                </select> -->
-
-
-            </div>
-        </header>
-
-        <main>
-
-            <div class="container">
-
-
-
-                <?php foreach ($albums as $album) : ?>
-
-
-                <div class="square">
-                    <div class="photo">
-                        <img src="<?=$album['poster'] ?>">
-                    </div>
-                    <h5><?=$album['title'] ?></h5>
-                    <p><?=$album['author'] ?></p>
-                    <p><?=$album['year'] ?></p>
-
-                </div>
-                <?php endforeach ?>
-
-
-            </div>
-
-
-        </main>
+        <!-- SITE MAIN -->
+        <?=  require(__DIR__.'/../dist/PHP_partials/template/main.php'); ?>
+        <!-- /SITE MAIN -->
 
     </div>
-
-
-
-
-
 
 </body>
 

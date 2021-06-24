@@ -1,0 +1,45 @@
+
+
+
+main{
+    background-color: #1E2D3B;
+    padding: 5rem 0 8rem 0;
+}
+
+.square{
+    width: calc((100% / 6 ) - 1rem) ;
+    padding:1rem; 
+    margin: 1rem 1rem 1rem  0;
+    background-color: #2E3A46;
+
+    .photo{
+        width: 100%;
+    height: auto;
+     }
+    
+}
+h5,  p{
+    width: 100%;
+    text-align: center;
+}
+
+h5{
+    padding: 1rem 0;
+    font-weight: bold;
+    color: white;
+    font-size: 1.4rem;
+}
+p{
+    font-size: 90%;
+    color: #687170;
+}
+
+.square .photo>img{
+    width: 100%;
+    height: auto;
+    object-fit:contain;
+}
+
+
+
+

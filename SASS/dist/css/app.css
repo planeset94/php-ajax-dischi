@@ -12,6 +12,13 @@ body {
   background-color: #1E2D3B;
 }
 
+.container {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
 header {
   background-color: #2E3A46;
   padding: 1rem 0;
@@ -31,20 +38,12 @@ main {
   padding: 5rem 0 8rem 0;
 }
 
-.container {
-  width: 90%;
-  margin: 0 auto;
-  display: flex;
-  flex-wrap: wrap;
-}
-
 .square {
   width: calc((100% / 6 ) - 1rem);
   padding: 1rem;
   margin: 1rem 1rem 1rem 0;
   background-color: #2E3A46;
 }
-
 .square .photo {
   width: 100%;
   height: auto;
