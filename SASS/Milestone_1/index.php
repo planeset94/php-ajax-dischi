@@ -48,19 +48,19 @@ require('../dist/PHP_partials/db.php');
 
 
 
+                <?php foreach ($albums as $album) : ?>
+
 
                 <div class="square">
                     <div class="photo">
-                        <img src="">
+                        <img src="<?=$album['poster'] ?>">
                     </div>
-                    <h5>Titolo</h5>
-                    <p>autore
-
-                    </p>
-                    <p>anno</p>
+                    <h5><?=$album['title'] ?></h5>
+                    <p><?=$album['author'] ?></p>
+                    <p><?=$album['year'] ?></p>
 
                 </div>
-
+                <?php endforeach ?>
 
 
             </div>
