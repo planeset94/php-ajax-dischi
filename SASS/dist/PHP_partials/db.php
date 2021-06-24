@@ -75,18 +75,19 @@
         
 ]; 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ?>
 </pre>
-
-
-
-<?php 
-foreach ($albums as $key => $value) {
- 
-}
-
-
-
-
-
-?>

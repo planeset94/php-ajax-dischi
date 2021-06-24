@@ -1,3 +1,12 @@
+<?php
+
+require(  __DIR__ .'/db.php');
+
+
+?>
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -38,15 +47,21 @@
             <div class="container">
 
 
+
+
                 <div class="square">
                     <div class="photo">
                         <img src="">
                     </div>
                     <h5>Titolo</h5>
-                    <p>par</p>
+                    <p>autore
+
+                    </p>
                     <p>anno</p>
 
                 </div>
+
+
 
             </div>
 
