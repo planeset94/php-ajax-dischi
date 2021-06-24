@@ -9,6 +9,24 @@ const app = new Vue(
 
             generi: [],
 
+            user_option: '',
+
+        },
+        methods: {
+
+            cambio_genere() {
+                // console.log(this.user_option);
+                this.albums.forEach(el => {
+                    if (this.user_option === 'All') {
+                        el.visible = true;
+                    } else if (el.genre.includes(this.user_option)) {
+                        el.visible = true;
+                    } else {
+                        el.visible = false;
+
+                    }
+                })
+            },
 
 
         },

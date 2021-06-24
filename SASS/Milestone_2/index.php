@@ -24,7 +24,7 @@
 
             <div class="container" v-show="albums.length > 9">
 
-                <div class="square" v-for="el in albums">
+                <div class="square" v-for="el in albums" v-show="el.visible">
                     <div class="photo">
                         <img :src="el.poster">
                     </div>

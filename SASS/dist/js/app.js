@@ -11,14 +11,31 @@ var app = new Vue({
   el: '#root',
   data: {
     albums: [],
-    generi: []
+    generi: [],
+    user_option: ''
+  },
+  methods: {
+    cambio_genere: function cambio_genere() {
+      var _this = this;
+
+      // console.log(this.user_option);
+      this.albums.forEach(function (el) {
+        if (_this.user_option === 'All') {
+          el.visible = true;
+        } else if (el.genre.includes(_this.user_option)) {
+          el.visible = true;
+        } else {
+          el.visible = false;
+        }
+      });
+    }
   },
   mounted: function mounted() {
-    var _this = this;
+    var _this2 = this;
 
     axios.get('../dist/PHP_partials/api.php').then(function (resp) {
       // console.log(resp.data);
-      _this.albums = resp.data; //Codice per determinare i generi musicali
+      _this2.albums = resp.data; //Codice per determinare i generi musicali
       // this.albums.forEach(el => {
       //     if (!this.generi.includes(el.genre)) {
       //         this.generi.push(el.genre)
@@ -27,13 +44,13 @@ var app = new Vue({
       // Aggiungo ad ogni elemento una chiave "visible" impostata su true 
       // (mi servirà per mostrare gli album se il genere è quello giusto )
 
-      _this.albums.forEach(function (el) {
+      _this2.albums.forEach(function (el) {
         el.visible = true;
       });
 
       axios.get('../dist/PHP_partials/genre.php').then(function (resp) {
         // console.log(resp.data)
-        _this.generi = resp.data;
+        _this2.generi = resp.data;
       });
     })["catch"](function (e) {
       console.log(e);
