@@ -3,7 +3,7 @@
 
 <?php
 
-if($_SERVER["REQUEST_URI"]==="/PHP/esercitazione_4(hp-ajax-dischi)/php-ajax-dischi/SASS/Milestone_2/index.php") : ?>
+if (str_contains($_SERVER["REQUEST_URI"], "Milestone_2")) : ?>
 
 <!-- PRIMA VUE -->
 <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
@@ -16,4 +16,4 @@ if($_SERVER["REQUEST_URI"]==="/PHP/esercitazione_4(hp-ajax-dischi)/php-ajax-disc
 <!-- MY SCRIPT  -->
 <script src="../dist/js/app.js"></script>
 
-<?php endif ;?>
+<?php endif; ?>
