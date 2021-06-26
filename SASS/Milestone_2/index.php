@@ -12,16 +12,11 @@
 
 <body>
     <div id="root">
-
         <!-- SITE HEADER -->
-        <?=  require(__DIR__.'/../dist/PHP_partials/template/header.php'); ?>
-
+        <?= require(__DIR__ . '/../dist/PHP_partials/template/header.php'); ?>
         <!-- /SITE HEADER -->
-
         <!-- SITE MAIN -->
-
         <main>
-
             <div class="container" v-show="albums.length > 9">
 
                 <div class="square" v-for="el in albums" v-show="el.visible">
@@ -33,20 +28,11 @@
                     <p>{{el.year}}</p>
 
                 </div>
-
-
-
             </div>
-
-
         </main>
-
-
+        <!-- /SITE MAIN -->
     </div>
-
-    <?= require(__DIR__.'/../dist/PHP_partials/template/footer.php')?>
-
-
+    <?= require(__DIR__ . '/../dist/PHP_partials/template/footer.php') ?>
 </body>
 
 </html>

@@ -3,7 +3,8 @@
 
 <?php
 
-if (str_contains($_SERVER["REQUEST_URI"], "Milestone_2")) : ?>
+$percorso = $_SERVER["REQUEST_URI"];
+if (strpos($percorso, 'Milestone_2')) : ?>
 
 <!-- PRIMA VUE -->
 <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
